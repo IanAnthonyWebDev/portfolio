@@ -1,0 +1,3 @@
+This portfolio contains webpages I made to practice html, css, and javascript. Most of the designs are copied from tutorials and the code is my attempt to recreate the tutorial websites without following the tutorials(although I often went back and refactored them after following the tutorials).
+
+The 'Quest for the Holy Grail' is a simple JavaScript game I made to practice DOM manipulation, local storage, and JavaScript syntax in general(all of my previous experience is with C#).
