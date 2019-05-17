@@ -4,11 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Ian's Portfolio</title>
 </head>
 <body>
-    <h1>Hello Github</h1>
+
+    <!-- Nav Menu -->
+    <nav class="menu">
+        <button id="menu-open"><i id="bars" class="fas fa-bars"></i></button>
+        <button id="menu-close"><i id="times" class="fas fa-times"></i></button>
+        <div class="menu-img">
+            <img class="face-img" src="img/face-temp.jpg" alt="">
+        </div>
+        <div class="menu-links">
+            <ul>
+                <li><a href="#home" id="link-home">Home</a></li>
+                <li><a href="#about" id="link-about">About Me</a></li>
+                <li><a href="#work" id="link-work">My Work</a></li>
+                <li><a href="#contact" id="link-contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <div class="grey">
+            <div class="container">
+                <div class="home-flex">
+                    <h1>Ian <span>Anthony</span></h1>
+                    <h2>Front End Web Developer</h2>
+                    <button id="view-work-btn">View My Work <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <h1>About <span>Me</span></h1>
+            <h2 class="no-pad">Let me tell you a few things...</h2>
+            <div class="about-grid">
+                <div class="about-img">
+                    <img class="face-img" src="img/face-temp.jpg" alt="">
+                </div>
+                <div class="about-bio">
+                    <h2><span>BIO</span></h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt magni nam nisi quae vitae? Quod molestiae ipsa autem natus eum vel ducimus nulla harum voluptatem eligendi! Unde, reiciendis? Praesentium, laborum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="container">
+        <h1>My <span>Work</span></h1>
+        <h2>Check out some of my projects...</h2>
+        <div class="portfolio-grid">
+            <div class="project-grid">
+                <a href="https://www.anthonywebdev.com" target="_blank"><img src="img/project.jpg" alt=""></a>
+                <button class="project-btn"><i class="fas fa-eye"></i>Project</button>
+                <button class="github-btn"><i class="fab fa-github"></i>Github</button>
+            </div>
+            <div class="project-grid">
+                <a href="https://www.anthonywebdev.com" target="_blank"><img src="img/project.jpg" alt=""></a>
+                <button class="project-btn"><i class="fas fa-eye"></i>Project</button>
+                <button class="github-btn"><i class="fab fa-github"></i>Github</button>
+            </div>
+            <div class="project-grid">
+                <a href="https://www.anthonywebdev.com" target="_blank"><img src="img/project.jpg" alt=""></a>
+                <button class="project-btn"><i class="fas fa-eye"></i>Project</button>
+                <button class="github-btn"><i class="fab fa-github"></i>Github</button>
+            </div>
+            <div class="project-grid">
+                <a href="https://www.anthonywebdev.com" target="_blank"><img src="img/project.jpg" alt=""></a>
+                <button class="project-btn"><i class="fas fa-eye"></i>Project</button>
+                <button class="github-btn"><i class="fab fa-github"></i>Github</button>
+            </div>
+            <div class="project-grid">
+                <a href="https://www.anthonywebdev.com" target="_blank"><img src="img/project.jpg" alt=""></a>
+                <button class="project-btn"><i class="fas fa-eye"></i>Project</button>
+                <button class="github-btn"><i class="fab fa-github"></i>Github</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container">
+        <h1>Contact <span>Me</span></h1>
+        <h2>Email me at <a href="mailto:ian@anthonywebdev.com">ian@anthonywebdev.com</a></h2>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2019 Ian Anthony, All rights reserved.</p>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
