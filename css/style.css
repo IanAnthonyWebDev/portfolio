@@ -21,7 +21,7 @@ span {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: auto;
     overflow: hidden;
 }
@@ -117,6 +117,60 @@ p {
     font-size: 1.5rem;
 }
 
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+    grid-gap: 0.6rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+}
+
+.project-grid img {
+    box-sizing: border-box;
+    width: 100%;
+    border: 3px solid #fff;
+    opacity: 1;
+}
+
+.project-grid img:hover {
+    border-color: /*#c4c4c4;*/var(--blue);
+    transition: opacity 0.5s ease-out;
+    opacity: 0.5;
+}
+
+.project-btn {
+    background-color: #c4c4c4;
+    color: #000;
+    border: none;
+    text-align: left;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.github-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    text-align: left;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.project-btn:hover {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.github-btn:hover {
+    background-color: var(--blue);
+}
+
 /* Media Queries */
 
 @media(max-width:780px) {
@@ -132,6 +186,14 @@ p {
     }
     .about-grid {
         grid-template-columns: 1fr;
+    }
+
+    .project-btn {
+        text-align: center;
+    }
+    
+    .github-btn {
+        text-align: center;
     }
 }
 
