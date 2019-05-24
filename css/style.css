@@ -329,6 +329,45 @@ p {
     background-color: var(--blue);
 }
 
+
+/* Contact Section */
+#contact {
+    background: #333;
+    margin-top: 2rem;
+}
+
+#contact div h2 a {
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    text-decoration: none;
+}
+
+#contact div h2 a:hover {
+    color: var(--blue);
+    border: 3px solid var(--blue);
+}
+
+#contact div h2 {
+    box-sizing: border-box;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+
+
+/* Footer */
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+footer p {
+    font-size: 1.4rem;
+}
+
+
 /* Media Queries */
 
 @media(max-width:780px) {
@@ -397,6 +436,17 @@ p {
     }
 }
 
+@media(max-width:600px) {
+
+    #contact div h2 a {
+        display: block;
+        box-sizing: border-box;
+        margin: 0;
+        margin-top: 1rem;
+        padding: 0.5rem 0;
+    }
+}
+
 @media(max-width:500px) {
     h1 {
         font-size: 5rem;
@@ -414,5 +464,17 @@ p {
     }
     .container {
         width: 85%;
+    }
+
+    #contact div h2 {
+        box-sizing: border-box;
+    }
+
+    #contact div h2 a {
+        display: block;
+        box-sizing: border-box;
+        margin: 0;
+        margin-top: 1rem;
+        padding: 0.5rem 0;
     }
 }
