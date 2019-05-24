@@ -1,0 +1,1 @@
+Simple browser game made to practice DOM manipulation, local storage, and JavaScript syntax in general.
