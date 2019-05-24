@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+
+html {
+    font-family: 'Roboto', sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    background: #000;
+}
+
+#map-grid {
+    background: #000;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+}
+
+.grid-block p {
+    background: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+#victory {
+    background: #000;
+    color: #fff;
+    border: 4px solid #fff;
+    width: 400px;
+    height: 250px;
+    text-align: center;
+    padding: 2rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /*margin-top: -200px;
+    margin-left: -400px;*/
+    transform: translate(-50%, -50%);
+}
+
+#victory button {
+    background: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#victory button:hover {
+    /* background: #fff; */
+    /* color: #000; */
+    border: 2px solid #fff;
+    font-size: 1.4rem;
+}
+
+#victory p {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+.character-menu {
+    background: #000;
+    color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.character-menu p {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+
+.character-menu button {
+    background: #000;
+    color: #fff;
+    border: 2px solid #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    margin:auto;
+}
+
+.character-menu button:hover {
+    border: 2px solid #fff;
+    font-size: 1.3rem;
+    margin-top: -0.1rem;
+}
+
+.character-menu input {
+    background: #000;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #fff;
+    font-size: 1.2rem;
+    padding: 1rem 2rem 0 0;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-bottom: 4rem;
+    width: 12rem;
+}
+
+.character-menu input:focus {
+    outline: none;
+}
+
