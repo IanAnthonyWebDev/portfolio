@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 :root {
-    --blue: rgb(75, 123, 255);/*rgb(61, 113, 255);*/
+    --blue: rgb(102, 150, 255); /*rgb(75, 123, 255);*/ /*rgb(61, 113, 255);*/
 }
 
 
 html {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     color: #fff;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: rgba(85, 85, 85, 1);
+    background: rgba(75, 75, 75, 1);
 }
 
 body {
@@ -114,6 +113,7 @@ nav {
     justify-content: center;
     -webkit-transition: all 0.6s;
     transition: all 0.6s;
+    box-sizing: border-box;
 }
 
 .face-img {
@@ -135,6 +135,7 @@ nav {
     justify-content: center;
     -webkit-transition: all 0.6s;
     transition: all 0.6s;
+    box-sizing: border-box;
 }
 
 .menu-img.menu-img-off {
@@ -397,7 +398,7 @@ footer p {
         position: fixed;
         left: 0;
         top: 0;
-        height: 25vh;
+        height: 30vh;
         width: 100vw;
     }
 
@@ -411,14 +412,14 @@ footer p {
     .menu-links {
         position: fixed;
         left: 0;
-        top: 25vh;
-        height: 75vh;
+        top: 30vh;
+        height: 70vh;
         width: 100vw;
     }
     
     .menu-links.menu-links-off {
         left: -100vw;
-        top: 25vh;
+        top: 30vh;
         -webkit-transition: all 0.6s;
         transition: all 0.6s;
     }
@@ -434,6 +435,10 @@ footer p {
         -webkit-transition: all 0.8s;
         transition: all 0.8s;
     }
+
+    .menu-links ul {
+        padding-left: 0;
+    }
 }
 
 @media(max-width:600px) {
@@ -444,6 +449,10 @@ footer p {
         margin: 0;
         margin-top: 1rem;
         padding: 0.5rem 0;
+    }
+
+    .face-img {
+        width: 125px;
     }
 }
 
@@ -474,6 +483,23 @@ footer p {
         display: block;
         box-sizing: border-box;
         margin: 0;
+        margin-top: 1rem;
+        padding: 0.5rem 0;
+    }
+
+    #home {
+        background-image: url('../img/home-background-mobile.webp');
+    }
+
+    .face-img {
+        width: 125px;
+    }
+}
+
+
+@media(max-width:400px) {
+    #contact div h2 a {
+        font-size: 1.2rem;
         margin-top: 1rem;
         padding: 0.5rem 0;
     }
