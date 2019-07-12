@@ -12,9 +12,20 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    margin: 0;
+    margin-top: 1rem;
+}
+
 .container {
     margin: auto;
-    width: 90%;
+    width: 80%;
+}
+
+.container-flex {
+    margin: auto;
+    width: 80%;
+    height: 95%;
 }
 
 .brown-light {
@@ -46,6 +57,7 @@ html {
     font-size: 3rem;
     justify-self: center;
     align-self: center;
+    color: var(--darkbrown);
 }
 
 .name-1 {
@@ -73,6 +85,11 @@ html {
     text-decoration: none;
     color: #000;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-grid ul li a:hover {
+    color: var(--lightbrown);
 }
 
 .flex-center {
@@ -93,4 +110,97 @@ html {
 
 #cart {
     margin-top: 2rem;
+}
+
+
+/* Landing Page Section */
+
+.landing-page {
+    margin: 0;
+    background-image: url(../img/coffee-lightblue2.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.flex-headers {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.flex-headers h2 {
+    margin-bottom: 0;
+}
+
+.flex-headers h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+/* Subscribe Section */
+
+.subscribe {
+    margin-top: -1.2rem;
+    background-image: url('../img/coffee-and-beans.jpg');
+}
+
+#welcome {
+    padding-top: 2rem;
+}
+
+#welcome h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#welcome p {
+    font-weight: 600;
+    width: 70%;
+}
+
+.subscribe-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+}
+
+.subscribe-grid img {
+    max-width: 100%;
+}
+
+.sub-box h3 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sub-btn {
+    border: 2px var(--lightbrown) solid;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: #000;
+    font-weight: bold;
+}
+
+.sub-btn:hover {
+    background-color: var(--lightbrown);
+    color: #fff;
 }
