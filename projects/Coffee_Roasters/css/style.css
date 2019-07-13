@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 
 :root {
     --lightbrown: #d2af79;
@@ -43,6 +44,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 2rem;
+    padding-bottom: 0.5rem;
 }
 
 .logo-grid {
@@ -234,11 +236,94 @@ body {
 
 /* Image Slider */
 
+.image-slider {
+    background-size: cover;
+    min-height: 100vh;
+    max-height: 800px;
+    transition: background-image 0.5s;
+    position: relative;
+}
 
+.img-1 {
+    background-image: url('../img/stove-beans.jpg');
+}
+
+.img-2 {
+    background-image: url('../img/mugsandbeans.jpg');
+}
+
+.img-3 {
+    background-image: url('../img/fresh-beans.jpg');
+}
+
+.img-4 {
+    background-image: url('../img/scoops2.jpg');
+}
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.dots button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.dots button:focus {
+    outline: none;
+}
+
+.slide-arrow {
+    position: absolute;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 200;
+    cursor: pointer;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#slide-left {
+    left: 10px;
+}
+
+#slide-right {
+    right: 10px;
+}
+
+.invisible-btn {
+    position: absolute;
+    top: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    height: 100%;
+}
+
+.invisible-btn:focus {
+    outline: none;
+}
+
+.invis-right {
+    right: 0;
+}
+
+.invis-left {
+    left: 0;
+}
 
 /* Footer */
 
 .footer {
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -268,7 +353,7 @@ body {
 }
 
 .social-links li {
-    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
     display: inline-block;
     white-space: nowrap;
 }
@@ -286,4 +371,12 @@ body {
 
 .social-links li a i {
     margin-top: 12px;
+}
+
+.copyright {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    color: #666;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
